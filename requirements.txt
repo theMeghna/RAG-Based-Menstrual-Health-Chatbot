@@ -9,3 +9,5 @@ faiss-cpu
 unstructured
 pypdf
 accelerate
+langchain-text-splitters
+
