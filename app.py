@@ -5,7 +5,8 @@ import warnings
 warnings.filterwarnings("ignore", message="Examining the path of torch.classes")
 
 # --- Core LangChain / Hugging Face Imports ---
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 from langchain_community.document_loaders import PyPDFLoader, UnstructuredURLLoader
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -193,3 +194,4 @@ if prompt := st.chat_input("Ask about menstrual health..."):
         handle_user_input(prompt)
     else:
         st.warning("Please wait for initialization or upload a PDF.")
+
